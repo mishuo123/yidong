@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%
+}
+
+a{
+    text-decoration: none;
+}
+.bg{
+    position: relative;
+    width: 37.5rem;
+    height: 66.7rem;
+    background-color: black;
+}
+.bg img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    width: 100rem;
+    height: 58rem;
+}
+.bg a{
+    display: block;
+    width: 37.5rem;
+    height: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #c8c7c7;
+    font-size: 1.2rem;
+    letter-spacing:1.1rem;
+    text-indent: 1.5rem;
+}
+.yuan{
+    position: absolute;
+    top: 40%;
+    left: 29%;
+    transform: translate(-50%,-50%);
+    width: 16rem;
+    height: 16rem;
+    border-radius: 8rem;
+    filter: blur(4rem);
+    background-color:rgba(243, 236, 236, 0.5);
+    animation:move 4s infinite;
+}
+@keyframes move{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/* 背景视频 */
+video{
+    position: absolute;
+    left: -80%;
+    width: 97.5rem;
+    height: 66.7rem;
+    z-index: 3;
+    display: none;
+    animation: movess 2s linear forwards 10s;
+}
+
+.hei{
+    position: absolute;
+    z-index: 4;
+    width: 37.5rem;
+    height: 66.7rem;
+    background-color: black;
+    animation: movess 2s linear forwards 6s;
+}
+.three{
+    position: absolute;
+    width: 37.5rem;
+    height: 66.7rem;
+    background-color: black;
+    z-index: 7;
+    color: white;
+    text-align: center;
+    line-height: 66.7rem;
+    font-size: 15rem;
+    animation: moves 2s linear forwards;
+}
+.two{
+    position: absolute;
+    width: 37.5rem;
+    height: 66.7rem;
+    background-color: black;
+    z-index: 6;
+    color: white;
+    text-align: center;
+    line-height: 66.7rem;
+    font-size: 15rem;
+    opacity: 0;
+    animation: moves 2s linear forwards 2s;
+}
+.one{
+    position: absolute;
+    width: 37.5rem;
+    height: 66.7rem;
+    background-color: black;
+    z-index: 5;
+    color: white;
+    text-align: center;
+    line-height: 66.7rem;
+    font-size: 15rem;
+    opacity: 0;
+    animation: moves 2s linear forwards 4s;
+}
+@keyframes moves{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    20%{
+        transform: scale(.8);
+        opacity: .8;
+    }
+    40%{
+        transform: scale(.6);
+        opacity: .6;
+    }
+    60%{
+        transform: scale(.4);
+        opacity: .4;
+    }
+    80%{
+        transform: scale(.2);
+        opacity: .2;
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+@keyframes movess{
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: .8;
+    }
+    40%{
+        opacity: .6;
+    }
+    60%{
+        opacity: .4;
+    }
+    80%{
+        opacity: .2;
+    }
+    100%{
+        opacity: 0;
+    }
+}
