@@ -163,3 +163,185 @@ video{
         opacity: 0;
     }
 }
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+header {
+    width: 37.5rem;
+    height: 6rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 0 3rem;
+    display: none;
+    z-index: 2;
+}
+header img {
+    display: block;
+    width: 12.5rem;
+    height: 8.333rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+header button {
+    width: 4.6rem;
+    height: 100%;
+    background: url(../img/下载.png)no-repeat center center;
+    border: 0;
+    background-size: 2.6rem auto;
+    position: absolute;
+    top: 50%;
+    right: 3rem;
+    transform: translateY(-50%);
+}
+/* 首页背景 第一页*/
+.box {
+    width: 37.5rem;
+    height: 66.7rem;
+    /* background-color: pink; */
+    position: relative;
+}
+.box video {
+    width: 100%;
+    height: 100%;
+}
+.box .hint {
+    width: 4.5rem;
+    position: absolute;
+    overflow: hidden;
+    top: .5rem;
+    left: .5rem;
+}
+.hint img {
+    width: 100%;
+}
+.box .hint_right {
+    width: 4.6rem;
+    height: 6rem;
+    background: url(../img/下载.png) no-repeat center center;
+    background-size: 2.6rem auto;
+    position: absolute;
+    top: 0;
+    right: 3rem;
+}
+.box_logo {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 9.2rem;
+    text-align: center;
+}
+.box_logo img {
+    display: inline-block;
+    width: auto;
+    height: 14.7rem;
+}
+.box_bottom {
+    width: 100%;
+    height: 22rem;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 0 5.4rem;
+}
+.box_bottom_video {
+    overflow: hidden;
+    transform: scale(1);
+    width: 26.7rem;
+    height: 5.7rem;
+    background: url(../img/下载2.png)no-repeat center center;
+    background-size: cover;
+}
+.box_bottom_video_open {
+    position: relative;
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 1rem auto;
+}
+.box_bottom_video_open::before {
+    display: block;
+    content: '';
+    width: 2.1rem;
+    height: 2.1rem;
+    background: url(../img/播放.png)no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-size: 2.1rem auto;
+}
+.box_bottom_down {
+    overflow: hidden;
+    width: 100%;
+    height: 9.598rem;
+    box-sizing: border-box;
+}
+.box_bottom_download {
+    width: 100%;
+    height: 3.917rem;
+    display: flex;
+    justify-content: space-between;
+}
+.box_bottom_download a {
+    width: 11.95rem;
+    height: 100%;
+}
+.box_bottom_download a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.box_bottom_txt {
+    width: 100%;
+    height: 4.68rem;
+    margin-top: 1rem;
+}
+.box_bottom_txt p {
+    display: block;
+    width: 100%;
+    height: 1.36rem;
+    font-size: 1.2rem;
+    background: url(../img/txt_bg.png)center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    margin-bottom: .3rem;
+}
+.box_bottom_txt3 a{
+    /* display: flex; */
+    display: block;
+    width: 4.8rem;
+    height: 1.6rem;
+    float: left;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: underline;
+    /* margin-right: 7rem; */
+    margin-left: 5rem;
+}
+/* 新闻资讯 第二页*/
+.new {
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 37.5rem;
+    height: 66.7rem;
+    background: url(../img/new_bg.jpg)no-repeat center/cover;
+}
