@@ -68,7 +68,6 @@ video{
     height: 66.7rem;
     z-index: 3;
     display: none;
-    animation: movess 2s linear forwards 10s;
 }
 
 .hei{

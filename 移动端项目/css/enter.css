@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    width: 37.5rem;
+    height: 6.5rem;
+    background-color: rgba(39, 38, 38, 0.9);
+}
+.logo{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 12.5rem;
+    height: 8.333rem;
+    
+}
+.fenlei{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 4.6rem;
+    height: 6.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fenlei img{
+    position: relative;
+    width: 2.5rem;
+    margin-right: 2rem;
+}
+.fenlei #err{
+    position: absolute;
+    width: 2.5rem;
+    margin-right: 2rem;
+    display: none;
+} 
+/* 导航栏 */
+nav{
+    z-index: 999;
+    position: fixed;
+    top: 6.5rem;
+    width: 37.5rem;
+    height: 60.2rem;
+    display: none;
+    background-color: rgba(39, 38, 38, 0.8);
+}
+nav ul{
+    width: 37.5rem;
+}
+nav ul li{
+    margin-left: 29rem;
+    width: 10rem;
+    height: 6rem;
+    line-height: 6rem;
+    text-align: center;
+}
+nav ul li a{
+    font-size: 2rem;
+}
+nav ul li:nth-of-type(1){
+    animation: move .6s ease alternate both;
+}
+nav ul li:nth-of-type(2){
+    animation: move .6s ease .1s alternate both;
+}
+nav ul li:nth-of-type(3){
+    animation: move .6s ease .2s alternate both;
+}
+nav ul li:nth-of-type(4){
+    animation: move .6s ease .3s alternate both;
+}
+nav ul li:nth-of-type(5){
+    animation: move .6s ease .4s alternate both;
+}
+@keyframes move{
+    0%{
+        opacity: 0;
+        transform: translate(-60%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6.5rem;
+    width: 37.5rem;
+    height: 62.2rem;
+    background: url(../image/mima2.jpg) no-repeat;
+    background-size: cover;
+}
+nav ul li:nth-of-type(5) a{
+    color: #ce9249;
+}
+.box1 img{
+    width: 10.7rem;
+    height: 3.8rem;
+    margin-top: 8rem;
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    width: 30rem;
+    height: 35rem;
+    background-color: white;
+    border-radius: .5rem;
+}
+.box2 p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #3b4354;
+}
+input{
+    width: 25rem;
+    height: 4rem;
+    text-indent: 1rem;
+    border: 1px solid #ccc;
+    outline: none;
+    color: rgb(136, 133, 133);
+}
+button{
+    width: 25rem;
+    height: 4rem;
+    border: none;
+    background-color: #3b4354;
+    text-align: center;
+    line-height: 4rem;
+    color: white;
+    font-size: 1.6rem;
+}
+.a{
+    width: 25rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.a span{
+    font-size: 1.2rem;
+    color: rgb(145, 145, 145);
+}
+.a1{
+    margin-top: 1rem;
+    width: 25rem;
+    height: 8rem;
+}
+.b,.b1{
+    width: 25rem;
+    height: 3rem;
+    line-height: 3rem;
+}                                 

@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 114rem;
+    background-color: #f0f0f0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    width: 37.5rem;
+    height: 6.5rem;
+    background-color: rgba(39, 38, 38, 0.9);
+}
+.logo{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 12.5rem;
+    height: 8.333rem;
+    
+}
+.fenlei{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 4.6rem;
+    height: 6.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fenlei img{
+    position: relative;
+    width: 2.5rem;
+    margin-right: 2rem;
+}
+.fenlei #err{
+    position: absolute;
+    width: 2.5rem;
+    margin-right: 2rem;
+    display: none;
+} 
+/* 导航栏 */
+nav{
+    z-index: 999;
+    position: fixed;
+    top: 6.5rem;
+    width: 37.5rem;
+    height: 60.2rem;
+    display: none;
+    background-color: rgba(39, 38, 38, 0.8);
+}
+nav ul{
+    width: 37.5rem;
+}
+nav ul li{
+    margin-left: 29rem;
+    width: 10rem;
+    height: 6rem;
+    line-height: 6rem;
+    text-align: center;
+}
+nav ul li a{
+    font-size: 2rem;
+}
+nav ul li:nth-of-type(1){
+    animation: move .6s ease alternate both;
+}
+nav ul li:nth-of-type(2){
+    animation: move .6s ease .1s alternate both;
+}
+nav ul li:nth-of-type(3){
+    animation: move .6s ease .2s alternate both;
+}
+nav ul li:nth-of-type(4){
+    animation: move .6s ease .3s alternate both;
+}
+nav ul li:nth-of-type(5){
+    animation: move .6s ease .4s alternate both;
+}
+@keyframes move{
+    0%{
+        opacity: 0;
+        transform: translate(-60%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+/* 轮播图 */
+.box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37.5rem;
+    height: 37.5rem;
+    background:url(../img/lunbotubg.jpg) no-repeat;
+    background-size:cover;
+}
+ .swiper-slide .tu1{
+     margin-top: 7rem;
+     margin-left: 3rem;
+     box-sizing: border-box;
+     padding: 1rem;
+     display: flex;
+     flex-direction: column;
+    width: 31.5rem;
+    height: 25rem;
+    background-color: rgba(39, 38, 38, 0.9);
+}
+.tu1 img{
+    width: 29.5rem;
+    height: 12.9rem;
+}
+.swiper-slide .tu1 div{
+    display: block;
+    font-size: 1.8rem;
+    color: white;
+}
+.di{
+    margin-bottom: 2rem;
+    width: 29.5rem;
+    margin-top: 1rem;
+}
+.di span:nth-of-type(1){
+    float: left;
+    font-size: 1.4rem;
+    color: #808080;
+}
+.di span:nth-of-type(2){
+    float: right;
+    font-size: 1.4rem;
+    color: #ffc000;
+}
+.swiper-container{
+    --swiper-theme-color: white;/* 设置Swiper风格 */
+    --swiper-navigation-color: white;/* 单独设置按钮颜色 */   
+    --swiper-navigation-size: 2.5rem;/* 设置按钮大小 */
+    --swiper-navigation-weight: 900;
+ 
+}
+/* tab栏切换 */
+.box2{
+    position: relative;
+    width: 37.5rem;
+    height: 36rem;
+}
+.tab{
+    width: 37.5rem;
+    height: 6rem;
+}
+.tab ul{
+    height: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tab ul li{
+    width: 9.5rem;
+    height: 2.7rem;
+    background-color: #cfd0d1;
+    border-radius: .3rem;
+    text-align: center;
+    line-height: 2.7rem;
+    font-size: 1.4rem;
+}
+.a{
+    background-color: #393b40!important;
+    color: #ffc000;
+}
+section{
+   
+     width: 37.5rem;
+    height: 30.5rem;
+   overflow: hidden;
+}
+.b1{
+    width: 37.5rem;
+    height: 40rem;
+}
+.box3{
+    display: none;
+}
+.b1 ul li,.box3 ul li{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 1.3rem 2rem;
+    width: 37.5rem;
+    height: 9.1rem;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+.left{
+    width: 7.5rem;
+    height: 6.5rem;
+}
+.left img{
+    width: 7.8rem;
+    height: 4.2rem;
+}
+.right{
+    flex: 1;
+}
+.right p{
+    color: #393b40;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+.right .b2{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.right .b2 span:nth-of-type(1){
+    font-size: 1.2rem;
+    color: #999;
+    margin-left: 1rem;
+}
+.right .b2 span:nth-of-type(2){
+    font-size: 1.2rem;
+    color: #ffc000;
+    margin-right: 1rem;
+}
+
+/* 加载按钮 */
+.but1{
+    position: absolute;
+    bottom: -5rem;
+    width: 31.6rem;
+    height: 3.5rem;
+    border: none;
+    outline: none;
+    background-color: #5e5f63;
+    margin: 1rem 3rem;
+    color: white;
+}
+.no{
+    margin-top: 2rem;
+    width: 37.5rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.6rem;
+}
+
+
+
+
+
+
+
+
+/* 底部 */
+footer {
+    margin-top: 5rem;
+    width: 37.5rem;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.fot_1 {
+    padding: 2rem 2.4rem 3rem;
+    font-size: 1.2rem;
+    background-color: #000;
+    color: #999;
+    overflow: auto;
+}
+.fot_cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.fot_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    min-width: auto;
+    min-height: 6rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+.fot_logo_con {
+    display: flex;
+    align-items: center;
+}
+.fot_logo_con img:first-child {
+    width: 8.5rem;
+    height: auto;
+}
+.fot_logo_con span {
+    display: block;
+    background-color: #666;
+    width: .1rem;
+    height: 3rem;
+    margin: 0 2rem;
+}
+.fot_logo_img2 {
+    width: 8rem;
+    margin-left: .5rem;
+    height: auto;
+}
+.fot_info {
+    margin-left: 0;
+    color: #aaa;
+    line-height: 2.4rem;
+}
+.fot_inline {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.fot_inline a {
+    font-size: 1.4rem;
+    color: #999;
+}
+.fot_filing {
+    margin-bottom: 1rem;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.fot_filing a,
+.fot_filing span {
+    color: #999;
+    display: block;
+    text-align: center;
+    padding: .3rem 0;
+    margin: 0;
+    font-size: 1.2rem;
+}
+.fot_d1 {
+    text-align: center;
+}
+.fot_d2 {
+    display: block;
+    text-align: center;
+}
+.fot_d3 {
+    text-align: center;
+    margin-left: 0;
+    display: block;
+}
+
+
+
+
+
+nav ul li:nth-of-type(2) a{
+    color: #ce9249;
+}

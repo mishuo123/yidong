@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 66.7rem;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    width: 37.5rem;
+    height: 6.5rem;
+    background-color: rgba(39, 38, 38, 0.9);
+}
+.logo{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 12.5rem;
+    height: 8.333rem;
+    
+}
+.fenlei{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 4.6rem;
+    height: 6.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fenlei img{
+    position: relative;
+    width: 2.5rem;
+    margin-right: 2rem;
+}
+.fenlei #err{
+    position: absolute;
+    width: 2.5rem;
+    margin-right: 2rem;
+    display: none;
+} 
+/* 导航栏 */
+nav{
+    z-index: 999;
+    position: fixed;
+    top: 6.5rem;
+    width: 37.5rem;
+    height: 60.2rem;
+    display: none;
+    background-color: rgba(39, 38, 38, 0.8);
+}
+nav ul{
+    width: 37.5rem;
+}
+nav ul li{
+    margin-left: 29rem;
+    width: 10rem;
+    height: 6rem;
+    line-height: 6rem;
+    text-align: center;
+}
+nav ul li a{
+    font-size: 2rem;
+}
+nav ul li:nth-of-type(1){
+    animation: move .6s ease alternate both;
+}
+nav ul li:nth-of-type(2){
+    animation: move .6s ease .1s alternate both;
+}
+nav ul li:nth-of-type(3){
+    animation: move .6s ease .2s alternate both;
+}
+nav ul li:nth-of-type(4){
+    animation: move .6s ease .3s alternate both;
+}
+nav ul li:nth-of-type(5){
+    animation: move .6s ease .4s alternate both;
+}
+@keyframes move{
+    0%{
+        opacity: 0;
+        transform: translate(-60%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37.5rem;
+    height: 66.7rem;
+    background: url(../img/worldbg.jpg) no-repeat;
+    background-size:cover;
+
+
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32rem;
+    height: 40rem;
+}
+.box1 img{
+    width: 22.5rem;
+    height: 5.4rem;
+    margin-top: 1rem;
+}
+.box1 img:nth-of-type(2){
+    width: 28.55rem;
+    margin-top: 1rem;
+    height: .9rem;
+}
+.box1 p{
+    font-size: 1.2rem;
+    color: white;
+    margin-top: .5rem;
+}
+.box1 p:nth-of-type(6){
+    margin-top: 1.5rem;
+    text-align: center;
+    width: 60rem;
+    height: 2rem;
+    font-size: 1.4rem;
+    background: url(../image/s2.png);
+    background-size: cover;
+}
+.anniu{
+    position: relative;
+    width: 4.8rem;
+    height: 4.8rem;
+    margin-top: 10rem;
+}
+.anniu img{
+    width: 4.8rem;
+    height: 4.8rem;
+}
+.fang{
+    position: absolute;
+    background-color: rgba(39, 38, 38, 0.2);
+    transform: rotate(45deg);
+    width: 4.0rem;
+    height: 4.0rem;
+    top: 1.4rem;
+    left: .4rem;
+    /* animation: move3 2s infinite linear; */
+}
+@keyframes move3{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    25%{
+        opacity: .8;
+        transform: scale(1.1);
+    }
+    50%{
+        opacity: .6;
+        transform: scale(1.2);
+    }
+    75%{
+        opacity: .8;
+        transform: scale(1.1);
+    }  
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.anniu img:nth-of-type(2){
+    position: absolute;
+    width: 2.3rem;
+    height: 1.2rem;
+    bottom: .2rem;
+    left: 2.42rem;
+    animation: breath 2s ease-in-out infinite;
+}
+@keyframes breath{
+    0%{
+        transform: translate(-50%, 0);
+    }
+    50%{
+        transform: translate(-50%, 40%);
+    }
+    100%{
+        transform: translate(-50%, 0);
+    }
+}
+
+
+.box2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 37.5rem;
+    height: 66.7rem;
+    background: url(../image/world2.jpg) no-repeat;
+    background-size:cover;
+}
+.box3{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 37.5rem;
+    height: 66.7rem;
+    background: url(../image/world3.jpg) no-repeat;
+    background-size:cover;
+}
+.box4{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 37.5rem;
+    height: 66.7rem;
+    background: url(../image/world4.jpg) no-repeat;
+    background-size:cover;
+}
+.box2 .iii,.box3 .iii,.box4 .iii{
+    margin-top: 13rem;
+    width: 10rem;
+    height: 10rem;
+}
+.box2 p:nth-of-type(1),.box3 p:nth-of-type(1),.box4 p:nth-of-type(1){
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.box2 p,.box3 p,.box4 p{
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.anniu2{
+    position: relative;
+    width: 5.4rem;
+    height: 5.4rem;
+    background:url(../image/w3.png) no-repeat;
+    background-size: cover;
+    margin-top: 3rem;
+}
+.white{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5.4rem;
+    height: 5.4rem;
+    background: url(../image/white.png) no-repeat;
+    background-size: cover;
+    transform-origin: center;
+    animation: wave 1s linear infinite;
+}
+@keyframes wave{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.2);
+        opacity: .9;
+    }
+    50%{
+        transform: scale(1.3);
+        opacity: .8;
+    }
+    75%{
+        transform: scale(1.4);
+        opacity: .7;
+    }
+    100%{
+        transform: scale(1.4);
+        opacity: .6;
+    }
+}
+
+.xiangqing,.xiangqing2,.xiangqing3{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 37.5rem;
+    height: 66.7rem;
+    background: rgba(39, 38, 38, 0.7);
+    z-index: 99;
+}
+.xiangqing .x1,.xiangqing2 .x1,.xiangqing3 .x1{
+    /* display: none; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 37.5rem;
+    height: 6.6rem;
+    background-color: black;
+}
+.x1 span:nth-of-type(1){
+    font-size: 1.6rem;
+    color: white;
+    margin-left: 3rem;
+}
+.x1 span:nth-of-type(2){
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 2rem;
+}
+.x1 span:nth-of-type(2) img{
+    width: 1.8rem;
+    height: 1.8rem;
+
+}
+.x2{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 31rem;
+    height: 37rem;
+    margin-left: 3rem;
+}
+.x2 p:nth-of-type(1){
+    height: 4rem;
+    width: 5rem;
+    line-height: 4rem;
+    color: white;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #cca574;
+}
+.guojiu{
+    margin-top: 2rem;
+    width: 31rem;
+    height: 17.78rem;
+}
+.guojiu img{
+    width: 31rem;
+    height: 17.78rem;
+}
+
+
+/* 底部导航栏 */
+.nav{
+    display: none;
+    position: fixed;
+    top: 58rem;
+    width: 37.5rem;
+    height: 7rem;
+    z-index: 98;
+}
+.xian{
+    position: absolute;
+    top: 2.1rem;
+    width: 37.5rem;
+    height: 0.1rem;
+    background-color: white;
+    opacity: .3;
+}
+.nav ul{
+    display: flex;
+    justify-content:center;
+}
+.nav ul li{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 5rem;
+}
+.nav ul li div{
+    margin-bottom: 1rem;
+    width: .7rem;
+    height: .7rem;
+    transform: rotate(45deg);
+    background-color: white;
+    opacity: .6;
+}
+.nav ul li span{
+    color: white;
+    font-size: 1.2rem;
+}
+.donghua{
+    animation: dong 2s infinite linear;
+    background-color: #f7f6f4!important;
+}
+@keyframes dong{
+    0%{
+        transform: scale(1) rotate(0deg);
+        opacity: .6;
+    }
+    25%{
+        transform: scale(1.6) rotate(20deg);
+        opacity: .8;
+    }
+    50%{
+        transform: scale(1.8) rotate(40deg);
+        opacity: 1.2;
+    }
+    75%{
+        transform: scale(1.6) rotate(60deg);
+        opacity: .8;
+    }
+    100%{
+        transform: scale(1.2) rotate(80deg);
+        opacity: .6;
+    }
+}
+
+
+nav ul li:nth-of-type(3) a{
+    color: #ce9249;
+}
