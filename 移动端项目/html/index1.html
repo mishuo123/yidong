@@ -32,8 +32,72 @@
         <video src="../video/bgsp.mp4" muted autoplay id="vid"></video>
     </div>
 
+
+    <!-- header头部 -->
+    <header id="head">
+        <img src="../img/position.png" alt="">
+        <button></button>
+    </header>
+    <!-- 首页背景 第一页-->
+    <div class="box">
+        <video src="https://webstatic.mihoyo.com/hk4e/upload/website/cn/videos/002.mp4" muted="muted"
+            autoplay="autoplay" loop="loop"></video>
+        <div class="hint">
+            <img src="../img/下载1.png" alt="">
+        </div>
+        <div class="hint_right"></div>
+        <div class="box_logo">
+            <img src="../img/logo.png" alt="">
+        </div>
+        <div class="box_bottom">
+            <div class="box_bottom_video">
+                <div class="box_bottom_video_open"></div>
+            </div>
+            <div class="box_bottom_down">
+                <div class="box_bottom_download">
+                    <a href="#">
+                        <img src="../img/download1.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../img/download2.png" alt="">
+                    </a>
+                </div>
+                <div class="box_bottom_txt">
+                    <p>开发者名称：上海米哈游天命科技有限公司</p>
+                    <p>当前版本：2.2.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更新时间：2021.10.13</p>
+                    <p class="box_bottom_txt3">
+                        <a href="#">隐私协议</a>
+                        <a href="#">用户权限</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 新闻资讯 第二页-->
+    <div class="new"></div>
 </body>
 
 </html>
 <script src="../js/touch-0.2.14.min.js"></script>
 <script src="../js/index1.js"></script>
+<script src="../js/jQuery.js"></script>
+<!-- <script>
+    //屏幕下滑出现导航
+    $(function () {
+        var index = $('.hint').offset().top;
+        $(window).scroll(function () {
+            if ($(document).scrollTop() >= index) {
+                $('#head').fadeIn();
+                $('.box_logo').fadeOut();
+            } else {
+                $('#head').fadeOut();
+                $('.box_logo').fadeIn();
+            }
+        })
+        $('#head').click(function () {
+            $('body,html').stop().animate({
+                scrollTop: 0
+            });
+        })
+    })
+</script> -->
